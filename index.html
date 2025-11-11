@@ -6,12 +6,21 @@
     <title>Strona z plikami</title>
 </head>
 <body>
-    <center>
     <h1 id="class">Danyla Krementsov</h1>
-</center>
-    <a href="">pliki szkolny</a>
+    <h3>pliki i szkolny projekty</h3>
+    <a href=""></a>
 <script>
-    
+    let name = document.getElementById("class");
+    date = new Date;
+    if (date.getFullYear() <= 2026 || date.getFullYear() === 2026 && date.getMonth() <= 6){
+        name.textContent = "Danyla Krementsov 3-C";
+    } else
+    if (date.getFullYear() <= 2027 || date.getFullYear() === 2026 && date.getMonth() <= 6){
+        name.textContent = "Danyla Krementsov 4-C";
+    } else
+    if (date.getFullYear() <= 2028 || date.getFullYear() === 2026 && date.getMonth() <= 6){
+        name.textContent = "Danyla Krementsov 5-C";
+    }
 </script>
 </body>
 </html>
