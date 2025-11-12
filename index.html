@@ -5,10 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona z plikami</title>
 </head>
-<body>
+<body bgcolor="#000000" text="#FFFFFF">
+    <center>
     <h1 id="class">Danyla Krementsov</h1>
     <h3>pliki i szkolny projekty</h3>
-    <a href=""></a>
+    <form action="upload.php" method="post">
+        <input type="hidden" value="kg">
+        <button type="submit">Pliki Kubiaka Grzegorza</button>
+
+    </form>
+    <br>
+    <form action="upload.php" method="post">
+        <input type="hidden" value="gr">
+        <button type="submit">Pliki Głośnickiego Roberta</button>
+    </form>
+    <br>
+        <form action="upload.php" method="post">
+        <input type="hidden" value="sa">
+        <button type="submit">Pliki Szymkowiak Anny</button>
+    </form>
+    <br>
+        <form action="upload.php" method="post">
+        <input type="hidden" value="sp">
+        <button type="submit">Pliki Samujła Piotra</button>
+    </form>
+    <br>
 <script>
     let name = document.getElementById("class");
     date = new Date;
@@ -22,5 +43,6 @@
         name.textContent = "Danyla Krementsov 5-C";
     }
 </script>
+</center>
 </body>
 </html>
